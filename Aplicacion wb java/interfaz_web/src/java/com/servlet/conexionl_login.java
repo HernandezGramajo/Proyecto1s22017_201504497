@@ -40,15 +40,16 @@ public class conexionl_login extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
      try(PrintWriter out = response.getWriter()){
      
-         String contraseña = request.getParameter("txtcontraseña");
-         String usuario =request.getParameter("txtusuario");
+        
+          String usuario =request.getParameter("txtusuario");
+         String contra =request.getParameter("txtcontra");
          
             
            try{
                
          RequestBody formBody = new FormEncodingBuilder()
-                .add("usuario", usuario)
-                .add("password",contraseña)
+               .add("usuario", usuario)
+                .add("password",contra)
                 .build();
         String r = getString("registro", formBody); 
         System.out.println("---"+ r + "---");

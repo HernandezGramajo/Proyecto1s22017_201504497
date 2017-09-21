@@ -26,6 +26,7 @@ class Listadoble:
             self.cabeza = temporal
             self.cola = temporal
         else:
+
             temporal.siguiente = self.cabeza
             self.cabeza.anterior=temporal
             self.cabeza =temporal
