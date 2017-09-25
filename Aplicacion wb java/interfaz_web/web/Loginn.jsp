@@ -29,7 +29,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" align ="right"><input type ="submit" value = "Log In" class="btn btn-primary"></td>
-                    <td colspan="1" align ="left" ><p>    </p><a href="Registro">Registrarse</a></td>
+                    <td colspan="1" align ="left" ><p>    </p><a href="Registro.jsp">Registrarse</a></td>
                 </tr>
 
             </table>

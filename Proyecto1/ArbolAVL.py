@@ -140,3 +140,14 @@ class ArbolAVL(object):
 		n1._derecho = self.IzquierdaIzquierda(n1._derecho)
 		return self.DerechaDerecha(n1)
 
+if __name__ == "__main__":
+
+    arbol = ArbolAVL()
+    arbol.insertar("es.txt","pa9blo","hola")
+    arbol.insertar("alberto", "pa8blo", "hola")
+    arbol.insertar("rodrigo", "pabl7o", "hola")
+    arbol.insertar("be", "pablo5", "hola")
+    arbol.insertar("luan", "pablo5", "hola")
+    arbol.inorden()
+    arbol.obtenerListaIds()
+    arbol.obtenerDatos("luan")

@@ -23,7 +23,7 @@ class NodoAVL(object):
             else:
                 self._derecho.insertar(val)
         else:
-            print("No se permiten los valores duplicados: \"" + String.valueOf(val) + "\".")
+            print("No se permiten los valores duplicados: \"" + str.valueOf(val) + "\".")
 
     def getCodigoGraphviz(self):
         return "digraph grafica{\n" + "rankdir=TB;\n" + "node [shape = record, style=filled, fillcolor=seashell2];\n" + self.getCodigoInterno() + "}\n"
@@ -38,4 +38,6 @@ class NodoAVL(object):
         if self._derecho != None:
             etiqueta = etiqueta + self._derecho.getCodigoInterno() + "nodo" + str(self._id) + ":C1->nodo" + str(self._derecho._id) + "\n"
         return etiqueta
+
+
 

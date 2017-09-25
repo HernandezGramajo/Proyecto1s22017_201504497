@@ -20,20 +20,20 @@
             
             <table align ="center">
                 <tr>
-                    <th align="right">NOMBRE DE USUARIO:</th>
+                    <th align="right">Nombre de Usuario:</th>
                     <td><input type="text" name ="txtusuario" placeholder = "Username"></td>
                 </tr>
                 <tr>
-                    <th align="right">CONTRASEÑA:</th>
+                    <th align="right">Contraseña:</th>
                     <td><input type="text" name ="txtcontra" placeholder = "contraseña"></td>
                 </tr>
                                 <tr>
-                    <th align="right">CONTRASEÑA:</th>
+                    <th align="right">Verificar Cotraseña:</th>
                     <td><input type="text" name ="txtcontracompara" placeholder = "comparar contrseña"></td>
                 </tr>
                 <tr>
-                    <td colspan="2" align ="right"><input type ="submit" value = "Log In" class="btn btn-primary"></td>
-                    <td colspan="1" align ="left" ><p>    </p><a href="">Registrarse</a></td>
+                    <td colspan="2" align ="right"><input type ="submit" value = "Registrar" class="btn btn-primary"></td>
+                    <td colspan="1" align ="left" ><p>    </p><a href="Loginn.jsp">atras</a></td>
                 </tr>
 
             </table>
