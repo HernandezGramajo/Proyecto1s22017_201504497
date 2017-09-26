@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>REGISTRO</title>
+        <title>Registro</title>
         <link href ="bootstrap.css" type="text/css" rel="stylesheet">       
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
        
@@ -16,7 +16,7 @@
 <body><br><br><br><br><br>
     <center><h1>REGISTRO</h1></center>
     <br>
-        <form action="conexionl_login" method ="POST">
+        <form action="conexion_registro" method ="POST">
             
             <table align ="center">
                 <tr>

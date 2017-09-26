@@ -5,6 +5,7 @@
  */
 package com.servlet;
 
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -24,15 +25,14 @@ import java.net.URL;
 import java.util.logging.Level;
 
 
-
-
-
 /**
  *
  * @author HERNÁNDEZ
  */
-public class conexionl_login extends HttpServlet {
 
+public class conexion_registro extends HttpServlet {
+
+    
      public static OkHttpClient webClient = new OkHttpClient();
      
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -41,33 +41,43 @@ public class conexionl_login extends HttpServlet {
      try(PrintWriter out = response.getWriter()){
      
         
+             
           String usuario =request.getParameter("txtusuario");
          String contra =request.getParameter("txtcontra");
+         String verificarpass = request.getParameter("txtcontracompara");
+            
+         if (contra == verificarpass) {
              
-         
-         
-         
+   
+            
            try{
                
          RequestBody formBody = new FormEncodingBuilder()
                .add("usuario", usuario)
                 .add("password",contra)
                 .build();
-        String r = getString("ingreso", formBody); 
+        String r = getString("registro", formBody); 
         System.out.println("---"+ r + "---");
-        
-               if (r== "True") {
-                    response.sendRedirect("index.html");
-               }
+
+        if (r== "True") {
+               response.sendRedirect("Loginn.jsp");
+              }
                else{
-        response.sendRedirect("Loginn.jsp");       
-               }
+          response.sendRedirect("Registro.jsp");    
+               }       
+                   
            }
            catch(Exception ex){
                out.println("Error  hola :"+ex.getMessage());
            }
             
            
+           
+     }else{
+         
+           response.sendRedirect("Registro.jsp");
+         
+         }        
      }
         
     }
@@ -97,5 +107,5 @@ public class conexionl_login extends HttpServlet {
     }
     
     
-
+   
 }
